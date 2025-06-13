@@ -3,18 +3,18 @@ provider "aws" {
 }
 
 # EC2 Instance
-# resource "aws_instance" "example" {
-#   ami = var.ami_id
-#   instance_type = "t3.medium"
+resource "aws_instance" "example" {
+  ami = var.ami_id
+  instance_type = "t3.medium"
 
-#   tags = {
-#     Name = "Terraform-EC2"
-#   }
-#   lifecycle {
-#     create_before_destroy = true
+  tags = {
+    Name = "Terraform-EC2"
+  }
+  lifecycle {
+    create_before_destroy = true
     
-#   }
-# }
+  }
+}
 
 resource "aws_s3_bucket" "example" {
   bucket = var.aws_s3_bucket_demo
