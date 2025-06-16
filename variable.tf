@@ -24,3 +24,7 @@ variable "aws_s3_bucket_tag" {
     Environment = "Dev"
   }
 }
+
+variable "Environment" {
+  default = "Dev"
+}

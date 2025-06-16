@@ -5,7 +5,7 @@ provider "aws" {
 # EC2 Instance
 resource "aws_instance" "example" {
   ami = var.ami_id
-  instance_type = "t3.medium"
+  instance_type = var.Environment == "Dev" && var.aws_region == "us-east-1" ? "t2.micro" : "t3.micro"
 
   tags = {
     Name = "Terraform-EC2"
