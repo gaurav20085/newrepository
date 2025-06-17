@@ -8,7 +8,7 @@ resource "aws_instance" "example" {
   instance_type = var.Environment == "Dev" && var.aws_region == "us-east-1" ? "t2.micro" : "t3.micro"
 
   tags = {
-    Name = "Terraform-EC2"
+    Name = var.tags[0]
   }
   lifecycle {
     create_before_destroy = true

@@ -28,3 +28,8 @@ variable "aws_s3_bucket_tag" {
 variable "Environment" {
   default = "Dev"
 }
+
+variable "tags" {
+type = list
+default = ["firstec2"]
+  }
