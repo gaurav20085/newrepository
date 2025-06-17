@@ -4,7 +4,7 @@ provider "aws" {
 
 # EC2 Instance
 resource "aws_instance" "example" {
-  ami = var.ami_id
+  ami = data.aws_ami.latest_amazon_linux.image_id
   instance_type = var.Environment == "Dev" && var.aws_region == "us-east-1" ? "t2.micro" : "t3.micro"
 
   tags = {
