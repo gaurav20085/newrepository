@@ -34,10 +34,7 @@ jobs:
 
     - name: Terraform Validate
       run: terraform validate
-
-    - name: Force Unlock
-      run: terraform force-unlock -force f468f95f-c398-c71a-dd3e-8eb38f87ac38
-
+    
     - name: Terraform Plan
       run: terraform plan
 
