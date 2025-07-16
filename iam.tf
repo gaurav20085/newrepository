@@ -1,7 +1,7 @@
 module "iam_user" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-user"
 
-  name          = "aarti.sardana"
+  name          = "aarti.sardana.gaurav"
   force_destroy = true
 
   pgp_key = "keybase:test"
