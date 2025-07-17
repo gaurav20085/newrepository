@@ -1,4 +1,4 @@
-cluster_name    = "my-private-cluster"
+cluster_name    = "my-privat-cluster"
 cluster_version = "1.31"
 subnet_ids      = ["subnet-abcde012", "subnet-bcde012a", "subnet-fghi345a"]
 min_size        = 1
