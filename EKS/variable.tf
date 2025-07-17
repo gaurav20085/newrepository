@@ -28,3 +28,8 @@ variable "tags" {
 variable "cluster_service_cidr" {
     type = string
 }
+
+variable "vpc_id" {
+    type = string
+  
+}

@@ -1,4 +1,4 @@
-cluster_name    = "my-private-cluster"
+cluster_name    = "cluster-gaumzi-test"
 cluster_version = "1.31"
 subnet_ids      = ["subnet-abcde012", "subnet-bcde012a", "subnet-fghi345a"]
 min_size        = 1
@@ -11,3 +11,4 @@ tags = {
   Terraform   = "true"
 }
 cluster_service_cidr = "10.100.0/16"
+vpc_id = "vpc-0e01a643398c2b39a"

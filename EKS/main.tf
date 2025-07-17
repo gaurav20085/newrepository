@@ -1,3 +1,11 @@
+module "eks_cluster" {
+    source          = "terraform-aws-modules/eks/aws"
+    cluster_name    = var.cluster_name
+    cluster_version = var.cluster_version
+    subnet_ids      = var.subnet_ids
+    vpc_id          = var.vpc_id // Assuming you have a variable for VPC ID
+    tags            = var.tags
+}  
 module "eks_managed_node_group" {
   source = "terraform-aws-modules/eks/aws//modules/eks-managed-node-group"
 
