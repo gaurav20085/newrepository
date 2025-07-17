@@ -28,15 +28,20 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
+      working-directory: ./EKS
 
     - name: Terraform Format
       run: terraform fmt -recursive
+      working-directory: ./EKS
 
     - name: Terraform Validate
       run: terraform validate
+      working-directory: ./EKS
     
     - name: Terraform Plan
       run: terraform plan
+      working-directory: ./EKS
 
     - name: Terraform Apply
       run: terraform apply -auto-approve -lock=false
+      working-directory: ./EKS
