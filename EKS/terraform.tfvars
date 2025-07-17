@@ -10,3 +10,4 @@ tags = {
   Environment = "dev"
   Terraform   = "true"
 }
+cluster_service_cidr = "10.100.0/16"

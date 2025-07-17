@@ -25,3 +25,6 @@ variable "capacity_type" {
 variable "tags" {
     type = map(string)
     }
+variable "cluster_service_cidr" {
+    type = string
+}
