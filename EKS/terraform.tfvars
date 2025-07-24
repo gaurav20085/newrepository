@@ -1,6 +1,6 @@
-cluster_name    = "cluster-gaumzi-test"
+cluster_name    = "cluster-gaumzi-us-east"
 cluster_version = "1.31"
-subnet_ids      = ["subnet-abcde012", "subnet-bcde012a", "subnet-fghi345a"]
+subnet_ids      = ["subnet-08f5ea1e24ffdf4ef", "subnet-051a3446b6706bf80"]
 min_size        = 1
 max_size        = 3
 disk_size       = 1
