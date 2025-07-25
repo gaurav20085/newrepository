@@ -1,9 +1,9 @@
-cluster_name    = "cluster-gaumzi-us-east"
-cluster_version = "1.31"
+cluster_name    = "cluster-gaumzi-india"
+cluster_version = "1.28"
 subnet_ids      = ["subnet-08f5ea1e24ffdf4ef", "subnet-051a3446b6706bf80"]
 min_size        = 1
 max_size        = 3
-disk_size       = 1
+disk_size       = 20
 instance_types  = ["t3.large"]
 capacity_type   = "SPOT"
 tags = {
